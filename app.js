@@ -5,8 +5,6 @@ const cookieParser = require("cookie-parser");
 const authRoutes = require("./routes/authRoutes");
 const { requireAuth, checkUser } = require("./middleware/authmiddleware");
 
-const port = 4000 || process.env.port;
-
 // middleware
 app.use(express.static("public"));
 app.use(express.json());
@@ -21,6 +19,8 @@ mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(port))
   .catch((err) => console.log(err));
+
+const port = 4000 || process.env.port;
 
 // routes
 app.get("*", checkUser);
