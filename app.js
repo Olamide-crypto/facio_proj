@@ -20,7 +20,7 @@ mongoose
   .then((result) => app.listen(port))
   .catch((err) => console.log(err));
 
-const port = 4000 || process.env.port;
+const port = 4000 || process.env.PORT;
 
 // routes
 app.get("*", checkUser);
