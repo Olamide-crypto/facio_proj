@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#green {
+  border: none;
+  background: transparent;
+  color: rgb(78, 223, 78);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.error {
+  color: rgb(78, 223, 78);
+  margin-top: 8px;
+  font-size: 0.8em;
+  text-align: left;
+  font-weight: bold;
+}
+
+#checkbox {
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.first_box {
+  margin-top: 25px;
+}
+
+#recover {
+  color: rgb(78, 223, 78);
+}
+
+#acct {
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 320px) {
+  #box {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.185);
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .warning {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 30px;
+  }
+  #btn {
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(101, 192, 101);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .all_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2rem;
+    margin-bottom: 0;
+    /* flex: 1; */
+  }
+  a {
+    width: 100%;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 540px) {
+}
+
+@media screen and (min-width: 768px) {
+  #box {
+    width: 50%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.185);
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .warning {
+    display: flex;
+    margin-top: -30px;
+    padding: 0 10.8rem;
+  }
+  #btn {
+    width: 25%;
+    padding: 10px 0;
+    background: rgb(101, 192, 101);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .all_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 0;
+    /* flex: 1; */
+  }
+  a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .warning {
+    display: flex;
+    margin-top: -30px;
+    padding: 0 15rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .warning {
+    display: flex;
+    margin-top: -30px;
+    padding: 0 26.6rem;
+  }
+}

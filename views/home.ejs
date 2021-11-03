@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>Facio | <%= title %></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Facio</h1>
+        <ul>
+          <% if (user) { %>
+          <li id="user">Welcome <%= user.email %></li>
+          <% } else { %> <% console.log(err) } %>
+        </ul>
+        <button id="first_btn">Shop with paystack</button>
+      </nav>
+      <div class="nav_btn">
+        <button id="in"><a href="/logout">Logout</a></button>
+      </div>
+      <div class="all">
+        <h2>The Facio Plug</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="  Enter email"
+        />
+        <input type="button" value="Enter" id="second_btn" />
+      </div>
+    </header>
+    <section>
+      <div class="flex">
+        <p>All</p>
+        <p>Project updates</p>
+        <p>Materials</p>
+        <p>Sponsors and promote</p>
+        <p>Company menu</p>
+        <p>section</p>
+      </div>
+    </section>
+    <section>
+      <div class="items">
+        <div class="items_details">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p id="font">Introducing season 2 of the decade fintech podcast</p>
+          <p id="width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laudantium non totam assumenda fuga, obcaecati corrupti
+            neque ipsam quos autem. Sequi illo odio veniam similique!
+          </p>
+        </div>
+
+        <img src="img\1.jpg" alt="" id="image" />
+      </div>
+      <div class="items">
+        <div class="items_details">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p id="font">Get featured on the facio valentine's day gift guide</p>
+          <p id="width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laudantium non totam assumenda fuga, obcaecati corrupti
+            neque ipsam quos autem. Sequi illo odio veniam similique!
+          </p>
+        </div>
+
+        <img src="img\2.jpg" alt="" id="image" />
+      </div>
+      <div class="items">
+        <div class="items_details">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p id="font">Introducing the facio popup shop</p>
+          <p id="width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laudantium non totam assumenda fuga, obcaecati corrupti
+            neque ipsam quos autem. Sequi illo odio veniam similique!
+          </p>
+        </div>
+
+        <img src="img\3.jpg" alt="" id="image" />
+      </div>
+      <div class="items">
+        <div class="items_details">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p id="font">Introducing facio storefront</p>
+          <p id="width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laudantium non totam assumenda fuga, obcaecati corrupti
+            neque ipsam quos autem. Sequi illo odio veniam similique!
+          </p>
+        </div>
+
+        <img src="img\4.jpg" alt="" id="image" />
+      </div>
+      <div class="items">
+        <div class="items_details">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p id="font">
+            Introducing multiple variants and inventory management improvements
+            to product link
+          </p>
+          <p id="width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laudantium non totam assumenda fuga, obcaecati corrupti
+            neque ipsam quos autem. Sequi illo odio veniam similique!
+          </p>
+        </div>
+
+        <img src="img\5.jpg" alt="" id="image" />
+      </div>
+    </section>
+    <section class="sect">
+      <div class="sect_details">
+        <h3>Get more stories like this</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+          corporis isijjd shuwu sggtt uuido jfjod nndj.
+        </p>
+        <div class="input">
+          <input type="search" name="search" id="search" />
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </div>
+    </section>
+    <section class="second_sect">
+      <div class="items">
+        <div class="items_details">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p id="font">Facio is joining stripe</p>
+          <p id="width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laudantium non totam assumenda fuga, obcaecati corrupti
+            neque ipsam quos autem. Sequi illo odio veniam similique!
+          </p>
+        </div>
+
+        <img src="img\5.jpg" alt="" id="image" />
+      </div>
+    </section>
+    <section class="third_sect">
+      <div class="page">
+        <p id="next">1</p>
+        <p id="next">2</p>
+        <p id="next">3</p>
+        <p id="next">Next</p>
+        <p id="next">prev</p>
+      </div>
+    </section>
+    <section>
+      <div class="last">
+        <div class="last_details">
+          <p id="width">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+            dolore delectus voluptates totam rerum eveniet temporibus! Dolores
+            repudiandae fugit velit unde, asperiores necessitatibus quia minus
+            vero, in nostrum optio sunt.
+          </p>
+        </div>
+        <button id="last_btn">Shop with us</button>
+      </div>
+      <div class="last">
+        <div class="last_details">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </section>
+  </body>
+</html>

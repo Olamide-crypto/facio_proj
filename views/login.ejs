@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Facio</title>
+  </head>
+  <body>
+    <form action="">
+      <div class="all_items" id="all">
+        <h1>faci<span id="green">o</span></h1>
+        <input
+          type="email"
+          name="email"
+          id="box"
+          placeholder="e-mail"
+          required
+        />
+        <div class="email error"></div>
+        <input
+          type="password"
+          name="password"
+          class="first_box"
+          id="box"
+          placeholder="password"
+          required
+        />
+        <div class="password error"></div>
+      </div>
+
+      <div class="all_items">
+        <button id="btn">Login</button>
+        <p id="acct">
+          Don't have an account?
+          <button id="green"><a href="/signup">signup here</a></button>
+        </p>
+      </div>
+    </form>
+
+    <script>
+      const form = document.querySelector("form");
+      const emailError = document.querySelector(".email.error");
+      const passwordError = document.querySelector(".password.error");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // reset errors
+        emailError.textContent = "";
+        passwordError.textContent = "";
+
+        // get the values
+        const email = form.email.value;
+        const password = form.password.value;
+
+        try {
+          const res = await fetch("/login", {
+            method: "POST",
+            body: JSON.stringify({ email, password }),
+            headers: { "content-type": "application/json" },
+          });
+          const data = await res.json();
+          console.log(data);
+          if (data.errors) {
+            emailError.textContent = data.errors.email;
+            passwordError.textContent = data.errors.password;
+          }
+          if (data.user) {
+            location.assign("/");
+          }
+        } catch {
+          console.log(err);
+        }
+      });
+    </script>
+  </body>
+</html>
